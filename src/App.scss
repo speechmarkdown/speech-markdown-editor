@@ -1,0 +1,38 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+html, body{
+  background-color: $light-gray3;
+}
+
+.root{
+  width: 800px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.editor-box{
+  border: 2px solid $light-gray1;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.toolbar{
+  padding: 12px;
+  border-bottom: 1px solid $light-gray1;
+  display: flex;
+}
+
+.editable-container{
+  padding: 12px;
+  min-height: 80px;
+}
+
+.preview-box{
+  border: 2px solid $light-gray1;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 48px;
+  background-color: white;
+}
