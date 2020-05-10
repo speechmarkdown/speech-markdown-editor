@@ -1,10 +1,11 @@
 @import "~@blueprintjs/core/lib/scss/variables";
 
-html, body{
+html,
+body {
   background-color: $light-gray3;
 }
 
-.root{
+.root {
   width: 800px;
   position: absolute;
   top: 50px;
@@ -12,27 +13,35 @@ html, body{
   transform: translateX(-50%);
 }
 
-.editor-box{
+.editor-box {
   border: 2px solid $light-gray1;
   border-radius: 6px;
   background-color: white;
 }
 
-.toolbar{
+.toolbar {
   padding: 12px;
   border-bottom: 1px solid $light-gray1;
   display: flex;
 }
 
-.editable-container{
+.editable-container {
   padding: 12px;
   min-height: 80px;
 }
 
-.preview-box{
+.preview-box {
   border: 2px solid $light-gray1;
   border-radius: 6px;
   padding: 12px;
   margin-top: 48px;
   background-color: white;
+}
+
+p {
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
 }
