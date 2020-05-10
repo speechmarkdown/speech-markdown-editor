@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/speech-markdown-editor/static/css/main.79ad1d4a.chunk.css",
-    "main.js": "/speech-markdown-editor/static/js/main.bf985b2b.chunk.js",
-    "main.js.map": "/speech-markdown-editor/static/js/main.bf985b2b.chunk.js.map",
+    "main.js": "/speech-markdown-editor/static/js/main.f60c2263.chunk.js",
+    "main.js.map": "/speech-markdown-editor/static/js/main.f60c2263.chunk.js.map",
     "runtime-main.js": "/speech-markdown-editor/static/js/runtime-main.f87a4678.js",
     "runtime-main.js.map": "/speech-markdown-editor/static/js/runtime-main.f87a4678.js.map",
     "static/css/2.e5ed3f04.chunk.css": "/speech-markdown-editor/static/css/2.e5ed3f04.chunk.css",
     "static/js/2.90d71711.chunk.js": "/speech-markdown-editor/static/js/2.90d71711.chunk.js",
     "static/js/2.90d71711.chunk.js.map": "/speech-markdown-editor/static/js/2.90d71711.chunk.js.map",
     "index.html": "/speech-markdown-editor/index.html",
-    "precache-manifest.eef75f97abcb40517b78b6bd22a2d744.js": "/speech-markdown-editor/precache-manifest.eef75f97abcb40517b78b6bd22a2d744.js",
+    "precache-manifest.072f2cc21af1a1e898875d3c52c76d54.js": "/speech-markdown-editor/precache-manifest.072f2cc21af1a1e898875d3c52c76d54.js",
     "service-worker.js": "/speech-markdown-editor/service-worker.js",
     "static/css/2.e5ed3f04.chunk.css.map": "/speech-markdown-editor/static/css/2.e5ed3f04.chunk.css.map",
     "static/css/main.79ad1d4a.chunk.css.map": "/speech-markdown-editor/static/css/main.79ad1d4a.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.e5ed3f04.chunk.css",
     "static/js/2.90d71711.chunk.js",
     "static/css/main.79ad1d4a.chunk.css",
-    "static/js/main.bf985b2b.chunk.js"
+    "static/js/main.f60c2263.chunk.js"
   ]
 }

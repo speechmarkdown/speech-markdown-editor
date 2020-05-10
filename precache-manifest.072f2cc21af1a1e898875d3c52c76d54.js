@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc05206149654aef2a509d3a9e25d90c",
+    "revision": "c54a09d739420755b95839775cc53f8d",
     "url": "/speech-markdown-editor/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/speech-markdown-editor/static/css/2.e5ed3f04.chunk.css"
   },
   {
-    "revision": "1ec5eaa482e08db02628",
+    "revision": "686130624dc7ed8c2645",
     "url": "/speech-markdown-editor/static/css/main.79ad1d4a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/speech-markdown-editor/static/js/2.90d71711.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ec5eaa482e08db02628",
-    "url": "/speech-markdown-editor/static/js/main.bf985b2b.chunk.js"
+    "revision": "686130624dc7ed8c2645",
+    "url": "/speech-markdown-editor/static/js/main.f60c2263.chunk.js"
   },
   {
     "revision": "09fcdea1da5e8fc77be0",
