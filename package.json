@@ -2,6 +2,7 @@
   "name": "speech-markdown-editor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arjun-g.github.io/speech-markdown-editor/",
   "dependencies": {
     "@blueprintjs/core": "^3.23.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "draft-js": "^0.11.4",
     "draft-js-plugins-editor": "^3.0.0",
+    "gh-pages": "^2.2.0",
     "immutable": "^4.0.0-rc.12",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -23,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
