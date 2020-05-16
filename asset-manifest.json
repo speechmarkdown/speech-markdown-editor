@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/speech-markdown-editor/static/css/main.79ad1d4a.chunk.css",
-    "main.js": "/speech-markdown-editor/static/js/main.f60c2263.chunk.js",
-    "main.js.map": "/speech-markdown-editor/static/js/main.f60c2263.chunk.js.map",
+    "main.css": "/speech-markdown-editor/static/css/main.59b7d445.chunk.css",
+    "main.js": "/speech-markdown-editor/static/js/main.8fc94b4d.chunk.js",
+    "main.js.map": "/speech-markdown-editor/static/js/main.8fc94b4d.chunk.js.map",
     "runtime-main.js": "/speech-markdown-editor/static/js/runtime-main.f87a4678.js",
     "runtime-main.js.map": "/speech-markdown-editor/static/js/runtime-main.f87a4678.js.map",
     "static/css/2.e5ed3f04.chunk.css": "/speech-markdown-editor/static/css/2.e5ed3f04.chunk.css",
-    "static/js/2.90d71711.chunk.js": "/speech-markdown-editor/static/js/2.90d71711.chunk.js",
-    "static/js/2.90d71711.chunk.js.map": "/speech-markdown-editor/static/js/2.90d71711.chunk.js.map",
+    "static/js/2.0ebb216d.chunk.js": "/speech-markdown-editor/static/js/2.0ebb216d.chunk.js",
+    "static/js/2.0ebb216d.chunk.js.map": "/speech-markdown-editor/static/js/2.0ebb216d.chunk.js.map",
     "index.html": "/speech-markdown-editor/index.html",
-    "precache-manifest.072f2cc21af1a1e898875d3c52c76d54.js": "/speech-markdown-editor/precache-manifest.072f2cc21af1a1e898875d3c52c76d54.js",
+    "precache-manifest.054227f3c2a239008867b495865b615d.js": "/speech-markdown-editor/precache-manifest.054227f3c2a239008867b495865b615d.js",
     "service-worker.js": "/speech-markdown-editor/service-worker.js",
     "static/css/2.e5ed3f04.chunk.css.map": "/speech-markdown-editor/static/css/2.e5ed3f04.chunk.css.map",
-    "static/css/main.79ad1d4a.chunk.css.map": "/speech-markdown-editor/static/css/main.79ad1d4a.chunk.css.map",
-    "static/js/2.90d71711.chunk.js.LICENSE.txt": "/speech-markdown-editor/static/js/2.90d71711.chunk.js.LICENSE.txt",
+    "static/css/main.59b7d445.chunk.css.map": "/speech-markdown-editor/static/css/main.59b7d445.chunk.css.map",
+    "static/js/2.0ebb216d.chunk.js.LICENSE.txt": "/speech-markdown-editor/static/js/2.0ebb216d.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/speech-markdown-editor/static/media/icons-20.ca7934b3.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.f87a4678.js",
     "static/css/2.e5ed3f04.chunk.css",
-    "static/js/2.90d71711.chunk.js",
-    "static/css/main.79ad1d4a.chunk.css",
-    "static/js/main.f60c2263.chunk.js"
+    "static/js/2.0ebb216d.chunk.js",
+    "static/css/main.59b7d445.chunk.css",
+    "static/js/main.8fc94b4d.chunk.js"
   ]
 }
