@@ -5,12 +5,18 @@ body {
   background-color: $light-gray3;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
 .root {
   width: 800px;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+#logo {
+  margin: 32px auto;
+  text-align: center;
 }
 
 .editor-box {
@@ -44,4 +50,15 @@ p {
 
 span {
   display: inline-block;
+}
+
+.bp3-tag {
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.recents {
+  padding: 12px;
+  border-top: 1px solid $light-gray1;
+  padding-bottom: 0;
 }

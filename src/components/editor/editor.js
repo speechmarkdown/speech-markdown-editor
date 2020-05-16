@@ -37,6 +37,8 @@ import {
   WhisperElement,
 } from "../../elements";
 
+import { Recent } from "../../libs/storage";
+
 import { serializeToSMD } from "../../libs/serialize";
 
 const renderElement = (props) => {
@@ -97,9 +99,14 @@ const renderElement = (props) => {
 const initialValue = [
   {
     children: [
+      { text: "Sample " },
       {
-        text: " ",
+        value: "speech",
+        children: [{ text: " " }],
+        type: "voice",
+        voice: "Nicole",
       },
+      { text: " markdown" },
     ],
   },
 ];
@@ -127,6 +134,22 @@ export function EditorComponent(props, ref) {
         if (node.type === "break") {
           defaultValue = undefined;
         }
+        if (node.type === "voice") {
+          let voiceNode = Object.assign({}, node);
+          delete voiceNode.type;
+          let type = Object.keys(voiceNode)[0];
+          Recent.add({
+            label: `${type}${node[type] ? `:${node[type]}` : ``}`,
+            node,
+          });
+        } else {
+          Recent.add({
+            label: `${node.type}${
+              node[node.type] ? `:${node[node.type]}` : ``
+            }`,
+            node,
+          });
+        }
         const newNode = Object.assign(
           {
             value: defaultValue,
@@ -150,12 +173,12 @@ export function EditorComponent(props, ref) {
       value={value}
       onChange={(value) => {
         setValue(value);
-        console.log(value);
-        console.log(serializeToSMD(value[0].children));
+        console.log(JSON.stringify(value));
         onChange(serializeToSMD(value[0].children));
       }}
     >
       <Editable
+        placeholder="Start Typing Here"
         onKeyDown={(event) => {
           editor.lastKeyDown = event.key;
         }}

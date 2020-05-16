@@ -131,18 +131,20 @@ export const MenuButton = (props) => {
             <MenuItem text="emphasis">
               <MenuItem
                 text="strong"
-                onClick={(e) => onSelect({ type: "emphasis", level: "strong" })}
+                onClick={(e) =>
+                  onSelect({ type: "emphasis", emphasis: "strong" })
+                }
               />
               <MenuItem
                 text="moderate"
                 onClick={(e) =>
-                  onSelect({ type: "emphasis", level: "moderate" })
+                  onSelect({ type: "emphasis", emphasis: "moderate" })
                 }
               />
               <MenuItem
                 text="reduced"
                 onClick={(e) =>
-                  onSelect({ type: "emphasis", level: "reduced" })
+                  onSelect({ type: "emphasis", emphasis: "reduced" })
                 }
               />
             </MenuItem>
@@ -247,177 +249,129 @@ export const MenuButton = (props) => {
             <MenuItem text="time">
               <MenuItem
                 text="12hr"
-                onClick={(e) => onSelect({ type: "time", rate: "hms12" })}
+                onClick={(e) => onSelect({ type: "time", time: "hms12" })}
               />
               <MenuItem
                 text="24hr"
-                onClick={(e) => onSelect({ type: "voice", rate: "hms24" })}
+                onClick={(e) => onSelect({ type: "time", time: "hms24" })}
               />
             </MenuItem>
             <MenuItem text="unit" onClick={(e) => onSelect({ type: "unit" })} />
             <MenuItem text="voice">
-              <MenuItem
-                text="Ivy (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Ivy (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Joanna (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Joanna (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Joey (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Joey (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Justin (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Justin (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Kendra (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Kendra (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Kimberly (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Kimberly (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Matthew (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Matthew (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Salli (en-US)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Salli (en-US)" })
-                }
-              />
-              <MenuItem
-                text="Nicole (en-AU)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Nicole (en-AU)" })
-                }
-              />
-              <MenuItem
-                text="Russell (en-AU)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Russell (en-AU)" })
-                }
-              />
-              <MenuItem
-                text="Amy (en-GB)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Amy (en-GB)" })
-                }
-              />
-              <MenuItem
-                text="Brian (en-GB)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Brian (en-GB)" })
-                }
-              />
-              <MenuItem
-                text="Emma (en-GB)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Emma (en-GB)" })
-                }
-              />
-              <MenuItem
-                text="Emma (en-GB)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Emma (en-GB)" })
-                }
-              />
-              <MenuItem
-                text="Raveena (en-IN)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Raveena (en-IN)" })
-                }
-              />
-              <MenuItem
-                text="Hans (de-DE)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Hans (de-DE)" })
-                }
-              />
-              <MenuItem
-                text="Marlene (de-DE)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Marlene (de-DE)" })
-                }
-              />
-              <MenuItem
-                text="Vicki (de-DE)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Vicki (de-DE)" })
-                }
-              />
-              <MenuItem
-                text="Conchita (es-ES)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Conchita (es-ES)" })
-                }
-              />
-              <MenuItem
-                text="Enrique (es-ES)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Enrique (es-ES)" })
-                }
-              />
-              <MenuItem
-                text="Carla (it-IT)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Carla (it-IT)" })
-                }
-              />
-              <MenuItem
-                text="Giorgio (it-IT)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Giorgio (it-IT)" })
-                }
-              />
-              <MenuItem
-                text="Mizuki (ja-JP)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Mizuki (ja-JP)" })
-                }
-              />
-              <MenuItem
-                text="Takumi (ja-JP)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Takumi (ja-JP)" })
-                }
-              />
-              <MenuItem
-                text="Celine (fr-FR)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Celine (fr-FR)" })
-                }
-              />
-              <MenuItem
-                text="Lea (fr-FR)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Lea (fr-FR)" })
-                }
-              />
-              <MenuItem
-                text="Mathieu (fr-FR)"
-                onClick={(e) =>
-                  onSelect({ type: "voice", voice: "Mathieu (fr-FR)" })
-                }
-              />
+              <div style={{ maxHeight: "300px", overflowY: "auto" }}>
+                <MenuItem
+                  text="Ivy (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Ivy" })}
+                />
+                <MenuItem
+                  text="Joanna (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Joanna" })}
+                />
+                <MenuItem
+                  text="Joey (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Joey" })}
+                />
+                <MenuItem
+                  text="Justin (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Justin" })}
+                />
+                <MenuItem
+                  text="Kendra (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Kendra" })}
+                />
+                <MenuItem
+                  text="Kimberly (en-US)"
+                  onClick={(e) =>
+                    onSelect({ type: "voice", voice: "Kimberly" })
+                  }
+                />
+                <MenuItem
+                  text="Matthew (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Matthew" })}
+                />
+                <MenuItem
+                  text="Salli (en-US)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Salli" })}
+                />
+                <MenuItem
+                  text="Nicole (en-AU)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Nicole" })}
+                />
+                <MenuItem
+                  text="Russell (en-AU)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Russell" })}
+                />
+                <MenuItem
+                  text="Amy (en-GB)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Amy" })}
+                />
+                <MenuItem
+                  text="Brian (en-GB)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Brian" })}
+                />
+                <MenuItem
+                  text="Emma (en-GB)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Emma" })}
+                />
+                <MenuItem
+                  text="Emma (en-GB)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Emma" })}
+                />
+                <MenuItem
+                  text="Raveena (en-IN)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Raveena" })}
+                />
+                <MenuItem
+                  text="Hans (de-DE)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Hans" })}
+                />
+                <MenuItem
+                  text="Marlene (de-DE)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Marlene" })}
+                />
+                <MenuItem
+                  text="Vicki (de-DE)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Vicki" })}
+                />
+                <MenuItem
+                  text="Conchita (es-ES)"
+                  onClick={(e) =>
+                    onSelect({ type: "voice", voice: "Conchita" })
+                  }
+                />
+                <MenuItem
+                  text="Enrique (es-ES)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Enrique" })}
+                />
+                <MenuItem
+                  text="Carla (it-IT)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Carla" })}
+                />
+                <MenuItem
+                  text="Giorgio (it-IT)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Giorgio" })}
+                />
+                <MenuItem
+                  text="Mizuki (ja-JP)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Mizuki" })}
+                />
+                <MenuItem
+                  text="Takumi (ja-JP)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Takumi" })}
+                />
+                <MenuItem
+                  text="Celine (fr-FR)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Celine" })}
+                />
+                <MenuItem
+                  text="Lea (fr-FR)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Lea" })}
+                />
+                <MenuItem
+                  text="Mathieu (fr-FR)"
+                  onClick={(e) => onSelect({ type: "voice", voice: "Mathieu" })}
+                />
+              </div>
             </MenuItem>
             <MenuItem text="volume">
               <MenuItem

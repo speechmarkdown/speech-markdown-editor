@@ -2,3 +2,6 @@
   background-color: rgba(225, 232, 237, 0.5);
   cursor: pointer;
 }
+.options {
+  cursor: pointer;
+}

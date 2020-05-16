@@ -1,6 +1,6 @@
 export function modifierToSMD(node) {
   const clonedNode = Object.assign({}, node);
-  clonedNode[clonedNode.type] = null;
+  clonedNode[clonedNode.type] = clonedNode[clonedNode.type] || null;
   delete clonedNode.children;
   delete clonedNode.type;
   delete clonedNode.value;
