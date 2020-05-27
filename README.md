@@ -4,7 +4,7 @@ Interactive editor for Speech Markdown ([https://www.speechmarkdown.org/](https:
 
 ## Try It
 
-[https://arjun-g.github.io/speech-markdown-editor/](https://arjun-g.github.io/speech-markdown-editor/)
+[https://speechmarkdown.github.io/speech-markdown-editor/](https://speechmarkdown.github.io/speech-markdown-editor/)
 
 ## Development
 
